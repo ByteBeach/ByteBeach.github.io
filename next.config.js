@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    basePath: isProd ? '/<ByteBeach.github.io>' : '',
-    assetPrefix: isProd ? '/<ByteBeach.github.io>' : ''
+    assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
+    assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || ''
 }
-
-const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = nextConfig
 
