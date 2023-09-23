@@ -2,7 +2,7 @@
 const nextConfig = 
 {
     output: 'export',
-    basePath: "/ByteBeach.github.io",
+    basePath: "/ByteBeach.github.io/out",
     images: {
         unoptimized: true,
       },
